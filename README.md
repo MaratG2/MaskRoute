@@ -71,3 +71,6 @@ version and independently designed adversarial tests. Run `python -m examples.pr
 and `python -m benchmarks.reuse`. See the [reuse comparison](benchmarks/project_management/report.md)
 and [validation status](docs/VALIDATION_REPORT.md). A valid multi-issue workflow is currently a strict
 expected failure because one shared private value cannot bind to two authorization resources.
+All four [hosted matrix jobs](https://github.com/MaratG2/MaskRoute/actions/runs/40298687653) passed,
+each with 198 passing tests and that one expected failure. The evidence favors an engineering case
+study with experimental source; it does not establish a maintained security SDK product.

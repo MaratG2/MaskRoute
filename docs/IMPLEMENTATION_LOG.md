@@ -181,3 +181,11 @@ to `codex/validation-reuse`, running the four hosted jobs and recording their re
 does not authorize merging main or releasing a package. Hosted results are recorded separately in
 `VALIDATION_REPORT.md` when available; earlier no-push statements describe their historical stages.
 
+Hosted run **40298687653** passed all four jobs on source commit
+`c1b808e4d7d188cb6c16da3d2cb57bca2c4ba2ef`. Ubuntu 24.04 used Python 3.11.17/3.14.8; Windows
+2025 used Python 3.11.9/3.14.9. Each reported **198 passed, 1 xfailed**, with no comparison skip,
+and passed every lint/type/demo/benchmark/package step. `validation/HOSTED_CI.json` records the
+actual job evidence. No main merge or package release was performed. All six validation activities
+are complete; the product recommendation remains a case study because the measured false denial
+and maintenance/value uncertainty remain. Hosted success does not convert that limitation to success.
+

@@ -1,5 +1,5 @@
 {
-  "status": "approved_for_branch_upload",
+  "status": "uploaded_initial_snapshot",
   "repository": "MaratG2/MaskRoute",
   "visibility": "public",
   "proposed_branch": "codex/validation-reuse",
@@ -352,5 +352,7 @@
       "utf8_lf_sha256": "4b9769b45f914f2342da04443de34873f8aaf986073fa6c600df8308c7a88c26",
       "bytes_utf8_lf": 6507
     }
-  ]
+  ],
+  "uploaded_commit": "c1b808e4d7d188cb6c16da3d2cb57bca2c4ba2ef",
+  "hash_scope": "File hashes describe the approved initial snapshot. Later documentation-only commits record authorized CI outcomes."
 }

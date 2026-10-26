@@ -1,0 +1,320 @@
+{
+  "repository": "MaratG2/MaskRoute",
+  "branch": "codex/validation-reuse",
+  "tested_commit": "c1b808e4d7d188cb6c16da3d2cb57bca2c4ba2ef",
+  "tree_sha": "95e51f427ae0f23353b6cb845771cb421e26c020",
+  "run_id": 40298687653,
+  "run_url": "https://github.com/MaratG2/MaskRoute/actions/runs/40298687653",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-10-26T09:19:45Z",
+  "completed_observed_at": "2026-10-26T09:20:38Z",
+  "attempt": 1,
+  "jobs": [
+    {
+      "id": 121490947540,
+      "name": "test (ubuntu-latest, 3.14)",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MaratG2/MaskRoute/actions/runs/40298687653/job/121490947540",
+      "python": "3.14.8",
+      "runner_image": "ubuntu-24.04",
+      "pytest_summary": "198 passed, 1 xfailed in 0.48s",
+      "steps": [
+        {
+          "name": "Set up job",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/setup-python@v5",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python -m pip install -e \".[dev,comparison]\"",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python -m pytest -q",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python -m ruff check .",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python -m ruff format --check .",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python -m mypy",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python -m examples.travel_support.demo",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python -m examples.project_management.demo",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python -m benchmarks.run --iterations 20 --warmup 2 --oss --output-dir build/ci-benchmark",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python -m benchmarks.reuse --iterations 20 --warmup 2 --output-dir build/ci-reuse",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python -m pip wheel . --no-deps --wheel-dir dist",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/setup-python@v5",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "id": 121490947785,
+      "name": "test (windows-latest, 3.14)",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MaratG2/MaskRoute/actions/runs/40298687653/job/121490947785",
+      "python": "3.14.9",
+      "runner_image": "windows-2025-vs2026",
+      "pytest_summary": "198 passed, 1 xfailed in 0.58s",
+      "steps": [
+        {
+          "name": "Set up job",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/setup-python@v5",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python -m pip install -e \".[dev,comparison]\"",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python -m pytest -q",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python -m ruff check .",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python -m ruff format --check .",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python -m mypy",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python -m examples.travel_support.demo",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python -m examples.project_management.demo",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python -m benchmarks.run --iterations 20 --warmup 2 --oss --output-dir build/ci-benchmark",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python -m benchmarks.reuse --iterations 20 --warmup 2 --output-dir build/ci-reuse",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python -m pip wheel . --no-deps --wheel-dir dist",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/setup-python@v5",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "id": 121490947934,
+      "name": "test (ubuntu-latest, 3.11)",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MaratG2/MaskRoute/actions/runs/40298687653/job/121490947934",
+      "python": "3.11.17",
+      "runner_image": "ubuntu-24.04",
+      "pytest_summary": "198 passed, 1 xfailed in 0.46s",
+      "steps": [
+        {
+          "name": "Set up job",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/setup-python@v5",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python -m pip install -e \".[dev,comparison]\"",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python -m pytest -q",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python -m ruff check .",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python -m ruff format --check .",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python -m mypy",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python -m examples.travel_support.demo",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python -m examples.project_management.demo",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python -m benchmarks.run --iterations 20 --warmup 2 --oss --output-dir build/ci-benchmark",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python -m benchmarks.reuse --iterations 20 --warmup 2 --output-dir build/ci-reuse",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python -m pip wheel . --no-deps --wheel-dir dist",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/setup-python@v5",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "id": 121490947963,
+      "name": "test (windows-latest, 3.11)",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/MaratG2/MaskRoute/actions/runs/40298687653/job/121490947963",
+      "python": "3.11.9",
+      "runner_image": "windows-2025-vs2026",
+      "pytest_summary": "198 passed, 1 xfailed in 0.44s",
+      "steps": [
+        {
+          "name": "Set up job",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/setup-python@v5",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python -m pip install -e \".[dev,comparison]\"",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python -m pytest -q",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python -m ruff check .",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python -m ruff format --check .",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python -m mypy",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python -m examples.travel_support.demo",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python -m examples.project_management.demo",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python -m benchmarks.run --iterations 20 --warmup 2 --oss --output-dir build/ci-benchmark",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python -m benchmarks.reuse --iterations 20 --warmup 2 --output-dir build/ci-reuse",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python -m pip wheel . --no-deps --wheel-dir dist",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/setup-python@v5",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "conclusion": "success"
+        }
+      ]
+    }
+  ],
+  "limitations": "One strict expected failure per job preserves the known valid multi-issue shared-contact false denial. Finite synthetic tests and stub workflows are not production security certification."
+}

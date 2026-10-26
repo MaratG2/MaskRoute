@@ -1,15 +1,15 @@
 # Second validation milestone
 
-26 October 2026. Local evaluation complete; the user explicitly approved uploading the reviewed
-implementation and workflow to `codex/validation-reuse` in the existing public repository and
-recording the hosted CI results. Jobs are pending. The scope remains the small experimental
-mediated-path SDK; no merge or package release is authorized.
+26 October 2026. All six validation activities are complete, with a negative product-readiness
+finding retained. The user explicitly approved uploading the reviewed implementation and workflow
+to `codex/validation-reuse` and recording hosted results. All four hosted jobs passed. The scope
+remains the small experimental mediated-path SDK; no merge or package release is authorized.
 
 ## Six requested outcomes
 
 | Outcome | Status | Evidence |
 |---|---|---|
-| Hosted Windows/Linux, Python 3.11/3.14 CI | Upload approved; results pending | Four-job workflow prepared; no hosted result is claimed |
+| Hosted Windows/Linux, Python 3.11/3.14 CI | Complete: 4/4 jobs passed | Run 40298687653; `validation/HOSTED_CI.json` |
 | Independent implementation review | Complete, qualified | `INDEPENDENT_REVIEW.md`; separate AI reviewer, two fixes independently rechecked |
 | Different second SDK integration | Implemented and evaluated | Project/issue ACLs, role-restricted notes, approved public dependency research; 3/4 valid tasks |
 | Minimal handwritten counterpart | Complete, built first | `baseline/project_management.py`; 4/4 valid tasks |
@@ -121,18 +121,39 @@ The p95 difference is 279 microseconds (about 0.28 ms). It is not a real-network
 or a reason to optimize. PIIGhost was not included in this second integration's performance claim.
 Full trial counts, environment, source metrics and timings are in the generated JSON report.
 
-## Hosted CI and next action
+## Hosted CI
 
-The existing repository `MaratG2/MaskRoute` is public and contains only the initial license; its
-remote workflow lookup returned 404. The four configured jobs cover Windows/Linux and Python
+Before upload, the public repository `MaratG2/MaskRoute` contained only the initial license; its
+remote workflow lookup returned 404. The four jobs cover Windows/Linux and Python
 3.11/3.14, installing dev/comparison extras and running tests, lint, format, typing, both demos,
 both benchmark smoke runs and a wheel build. Workflow token permissions are read-only.
 
-Running those jobs requires uploading the local implementation, not merely toggling existing CI.
+Running those jobs required uploading the local implementation, not merely toggling existing CI.
 `AGENTS.md` explicitly requires approval before publishing or pushing. The user approved the
 reviewed 69-file manifest plus the manifest itself, a separate `codex/validation-reuse` branch,
 the four CI jobs and recording their results. No merge, package release or visibility change was
-approved. Until actual hosted results exist, Linux and hosted Windows verification remain pending.
+approved. The GitHub connector created the approved branch after that confirmation; local SSH
+credentials were not needed. The local branch was aligned only after verifying its staged Git
+tree exactly matched the uploaded tree.
+
+Tested source commit: `c1b808e4d7d188cb6c16da3d2cb57bca2c4ba2ef`.
+[Hosted run 40298687653](https://github.com/MaratG2/MaskRoute/actions/runs/40298687653)
+completed successfully on its first attempt. Recorded job logs show:
+
+| Runner | Actual Python | Pytest result | Whole job |
+|---|---|---|---|
+| Ubuntu 24.04 | 3.11.17 | 198 passed, 1 xfailed (0.46 s) | Success |
+| Ubuntu 24.04 | 3.14.8 | 198 passed, 1 xfailed (0.48 s) | Success |
+| Windows 2025 | 3.11.9 | 198 passed, 1 xfailed (0.44 s) | Success |
+| Windows 2025 | 3.14.9 | 198 passed, 1 xfailed (0.58 s) | Success |
+
+All jobs installed the optional comparison extra; none skipped its test. Each job also passed
+lint, format, strict typing, both demos, both benchmark smoke checks and wheel build. The strict
+xfail remains the known positive-workflow limitation, not a new CI failure or a successful task.
+`validation/HOSTED_CI.json` records job IDs, URLs, interpreter versions and step conclusions.
+Documentation updates recording these outcomes do not change the tested SDK/application source.
+
+## Recommendation and next step
 
 The recommendation is to present **Designing and Evaluating Policy-Controlled Disclosure for LLM
 Agents** as an engineering case study, with clearly experimental source if publication is approved.

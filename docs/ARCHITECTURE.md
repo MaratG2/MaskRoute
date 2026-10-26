@@ -73,7 +73,8 @@ host approval and finite topic; the trusted application constructs the query.
 10. **Packaging:** stdlib-only `src/` package with `py.typed`; examples/baselines/benchmarks stay in the
     checkout. Optional PIIGhost comparison is isolated from the core. No real provider adapter was
     needed to meet deterministic gates, so none was added. Existing repository MIT license retained;
-    owner review precedes any publication. No changes were pushed.
+    owner review precedes any publication. Initial implementation remained local; the subsequent
+    validation branch was uploaded with explicit approval. See `VALIDATION_REPORT.md` for hosted CI.
 
 ## Limits and decision gate
 
