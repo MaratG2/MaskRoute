@@ -1,0 +1,356 @@
+{
+  "status": "approved_for_branch_upload",
+  "repository": "MaratG2/MaskRoute",
+  "visibility": "public",
+  "proposed_branch": "codex/validation-reuse",
+  "base_commit": "d0c94963594638b163a3d0c98ea938618e3ec2ef",
+  "scope": "Upload listed reviewed source, tests, documentation and workflow plus this manifest; record actual CI outcomes. No merge or package release.",
+  "file_count_excluding_manifest": 69,
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "utf8_lf_sha256": "f31d1b7bd1b9d425ac16f99626384da40b22c524c384fb38fdd144b21af72948",
+      "bytes_utf8_lf": 954
+    },
+    {
+      "path": ".gitignore",
+      "utf8_lf_sha256": "115e5a7eadda74b9481f977d08656c4cbe02f1dd747bdf28ce91ca1824d000ce",
+      "bytes_utf8_lf": 116
+    },
+    {
+      "path": "AGENTS.md",
+      "utf8_lf_sha256": "4f8b648b15d50e2fb9ebd6ce5c5e69f7ad3587f02ef3c0753bebd173b9710a26",
+      "bytes_utf8_lf": 1356
+    },
+    {
+      "path": "LICENSE",
+      "utf8_lf_sha256": "6aea68259191deb8f95a58e200406601ace1960d44d7ed4a392e6895df8a2fb0",
+      "bytes_utf8_lf": 1072
+    },
+    {
+      "path": "README.md",
+      "utf8_lf_sha256": "a41dc160690c4a8ef3fa513ad88fc27dcaebf2fda1d3d6dd76d2b5598bbe8a64",
+      "bytes_utf8_lf": 3740
+    },
+    {
+      "path": "baseline/__init__.py",
+      "utf8_lf_sha256": "a8bff5a498c156e2fe7d694d118522d77505bd4ff45932373d3a8bfaa60f5f0d",
+      "bytes_utf8_lf": 68
+    },
+    {
+      "path": "baseline/controls.py",
+      "utf8_lf_sha256": "70403712b74fb001a5aaba7d484106b8df850d73c8ee95a02ef60aef6b0a5b2b",
+      "bytes_utf8_lf": 2828
+    },
+    {
+      "path": "baseline/project_management.py",
+      "utf8_lf_sha256": "3122adce0b96cb1b34e1b874f0b7f7a5ca43552f3eb8a078371c49bca72f0762",
+      "bytes_utf8_lf": 6415
+    },
+    {
+      "path": "baseline/travel_support.py",
+      "utf8_lf_sha256": "0c6a7240e92e4316d2c2ffe2aae5033f4ba55cae98254f735760c25dde1da25e",
+      "bytes_utf8_lf": 4752
+    },
+    {
+      "path": "benchmarks/__init__.py",
+      "utf8_lf_sha256": "0c0069118eafed94e7b83e1310aa41a79c405e43d4ab7976e19989b9afd423c5",
+      "bytes_utf8_lf": 75
+    },
+    {
+      "path": "benchmarks/adapters.py",
+      "utf8_lf_sha256": "0e8641d2e4273ba588c218f327d9c483ea7e008278abc05024033207c7f340b8",
+      "bytes_utf8_lf": 2488
+    },
+    {
+      "path": "benchmarks/detection_data.py",
+      "utf8_lf_sha256": "0a29b6884d27c1df1917957d0184e965c3fca2b144f6a1d76d463ca2344637ac",
+      "bytes_utf8_lf": 2082
+    },
+    {
+      "path": "benchmarks/oss.py",
+      "utf8_lf_sha256": "d39e58b999ba92b5d92e075fc5d54addee063712ec181626507c4c29d9df1f47",
+      "bytes_utf8_lf": 2434
+    },
+    {
+      "path": "benchmarks/project_management/report.md",
+      "utf8_lf_sha256": "7dca01cfa115fe9dd71b738e92a29cafcd24b392960bafc6399e5eba345d7a67",
+      "bytes_utf8_lf": 5204
+    },
+    {
+      "path": "benchmarks/project_management/results.json",
+      "utf8_lf_sha256": "d322cca7fa95645bfabb09ab851d61d0af7f42a7ea9bb5f718b75a30d3c5cbdd",
+      "bytes_utf8_lf": 18646
+    },
+    {
+      "path": "benchmarks/project_scenarios.py",
+      "utf8_lf_sha256": "2cce53a652055ee1a9f88f22880d68f42be14b5becd10960fdf807bdb00b76c2",
+      "bytes_utf8_lf": 9171
+    },
+    {
+      "path": "benchmarks/report.md",
+      "utf8_lf_sha256": "1c7374fda2112bc68775183d1dc16853267665fb227b32e1f31d12bc5b04abcb",
+      "bytes_utf8_lf": 6237
+    },
+    {
+      "path": "benchmarks/results.json",
+      "utf8_lf_sha256": "49f33a67acd8836c4853736bb3ef9c2175e46c8cc03671e911a7403fe8d8a595",
+      "bytes_utf8_lf": 30338
+    },
+    {
+      "path": "benchmarks/reuse.py",
+      "utf8_lf_sha256": "7c5c18c66dcdb1129888e7b08094ca1a1bf7145ba1ba23f95c21e6d859a8d851",
+      "bytes_utf8_lf": 8624
+    },
+    {
+      "path": "benchmarks/run.py",
+      "utf8_lf_sha256": "448c7c2a749e288447a15ac80de547fb3ba0619055b9bb6dfd2e4e773613703d",
+      "bytes_utf8_lf": 15273
+    },
+    {
+      "path": "benchmarks/scenarios.py",
+      "utf8_lf_sha256": "3ad6b0d50be9b6a2c2177e61552c76bf8f3507452f2516d1d92adb5a3e6bcff8",
+      "bytes_utf8_lf": 6160
+    },
+    {
+      "path": "docs/000-ProjectBrief.md",
+      "utf8_lf_sha256": "72fdb723572b4374fe8ff58f6c8b380f7bfc3da0acec13319566e744ff2b7632",
+      "bytes_utf8_lf": 2031
+    },
+    {
+      "path": "docs/001-DataClassification.md",
+      "utf8_lf_sha256": "1e372dc55917f1d52cdd2d87e6dce50dc8b18fcf4ff451745f218cd075f213eb",
+      "bytes_utf8_lf": 2109
+    },
+    {
+      "path": "docs/002-ThreatModel.md",
+      "utf8_lf_sha256": "87ec4772d7addb0d3a5783d2dd210129f99144aebf05a1f92e98249346eede2e",
+      "bytes_utf8_lf": 3643
+    },
+    {
+      "path": "docs/003-TrustBoundaries.md",
+      "utf8_lf_sha256": "59b1d0e80c51373459f9cfb75d5eba7881dd6e7f4d9639db9a30f026899384c6",
+      "bytes_utf8_lf": 2901
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "utf8_lf_sha256": "1557202670c6e00041e5361c006b537f9057465b7e90f10794dd85f40b1054b6",
+      "bytes_utf8_lf": 8692
+    },
+    {
+      "path": "docs/DEMO_TRANSCRIPT.json",
+      "utf8_lf_sha256": "29beae6bb8f8392a925b00a797c7c51752e8c022d0b3d5b8bd74981eb60d753d",
+      "bytes_utf8_lf": 305
+    },
+    {
+      "path": "docs/IMPLEMENTATION_LOG.md",
+      "utf8_lf_sha256": "91003a1d250d25d6d802d769f37a80d895a6fcc0fbf34ef0525e31cd57bd03b7",
+      "bytes_utf8_lf": 13437
+    },
+    {
+      "path": "docs/IMPLEMENTATION_SPEC.md",
+      "utf8_lf_sha256": "eed77dff4ea4392a81564b053e0cb0a18fc6d2e7e84abfcb4c98fc682ee1ca00",
+      "bytes_utf8_lf": 22233
+    },
+    {
+      "path": "docs/INDEPENDENT_ATTACK_DESIGN.md",
+      "utf8_lf_sha256": "9e08f1f786914ce4d6fbff21990da76a42e0469fa06d9e77aa3a7e825a27d298",
+      "bytes_utf8_lf": 9584
+    },
+    {
+      "path": "docs/INDEPENDENT_REVIEW.md",
+      "utf8_lf_sha256": "088c142813a74ac3a3f4c928a7f1c36b10f2bda0488bcfcd1713cec9932b4dd4",
+      "bytes_utf8_lf": 15235
+    },
+    {
+      "path": "docs/OSS_COMPARISON.md",
+      "utf8_lf_sha256": "83d96ff0f2d2b4677c4689a530ad2eb5a5ed0ff94077ad53004cbc45e71ad271",
+      "bytes_utf8_lf": 3086
+    },
+    {
+      "path": "docs/PROJECT_DEFINITION.md",
+      "utf8_lf_sha256": "c61018d533d867c72297a57e17d18f0852fb07bcc94fb7038ea0459e3db52d92",
+      "bytes_utf8_lf": 10243
+    },
+    {
+      "path": "docs/TEST_MATRIX.md",
+      "utf8_lf_sha256": "dcda9accb509df733f48302d3a206f47b6a19fb75d1d9f33bcc0a9242f5848b9",
+      "bytes_utf8_lf": 2370
+    },
+    {
+      "path": "docs/VALIDATION_PLAN.md",
+      "utf8_lf_sha256": "83ee03124a8b2b0bca2ed53ca6998b0814506a4ef47b5d19c71325c9c38b55fe",
+      "bytes_utf8_lf": 2651
+    },
+    {
+      "path": "docs/VALIDATION_REPORT.md",
+      "utf8_lf_sha256": "19e1b33b9f56964001fad0657eb9e8ef278f2af4fc237c6869682787b8c88c5a",
+      "bytes_utf8_lf": 9912
+    },
+    {
+      "path": "docs/validation/PROJECT_DEMO_TRANSCRIPT.json",
+      "utf8_lf_sha256": "dacbbc24fb6d4c0587a0d78d6a99dd4d52134d0e600a27ef9b2f5cf5c99003de",
+      "bytes_utf8_lf": 339
+    },
+    {
+      "path": "docs/validation/sdk_baseline_hashes.json",
+      "utf8_lf_sha256": "399596ed9a842ec32dc18760ec7a74cc3968f16c731c47173e56bca1daf84db8",
+      "bytes_utf8_lf": 852
+    },
+    {
+      "path": "examples/__init__.py",
+      "utf8_lf_sha256": "f01063e9547eac4ec90512d6448d33215561792531174cf1f818ca33a6aa8061",
+      "bytes_utf8_lf": 68
+    },
+    {
+      "path": "examples/project_management/__init__.py",
+      "utf8_lf_sha256": "7e00c9e08297822434efaa730f8068a1e2a3fc36ecff5ca5ea65caafde11780d",
+      "bytes_utf8_lf": 85
+    },
+    {
+      "path": "examples/project_management/application.py",
+      "utf8_lf_sha256": "e058c0d6711e4132028694d71a0b974f258e97c9bd9ff6414f251143b166ae75",
+      "bytes_utf8_lf": 3293
+    },
+    {
+      "path": "examples/project_management/demo.py",
+      "utf8_lf_sha256": "3b9d85d32483bacfc65b6d7c9de1278d1f040b63b5577f4d7703fbf9da1df516",
+      "bytes_utf8_lf": 2836
+    },
+    {
+      "path": "examples/project_management/fixtures.py",
+      "utf8_lf_sha256": "08239cbf729c553decfb9c269d2c08ccf5046012d8fe01e896158d5b6bc590b2",
+      "bytes_utf8_lf": 3728
+    },
+    {
+      "path": "examples/travel_support/__init__.py",
+      "utf8_lf_sha256": "593cbeb6945a056bea0663d4bd6f554b8d2b13f81dc3cc04096d2c081153b103",
+      "bytes_utf8_lf": 47
+    },
+    {
+      "path": "examples/travel_support/application.py",
+      "utf8_lf_sha256": "06c11e979b8f32a13d628bec5714ae04210ab92755e8f739beb0e31208f5cff1",
+      "bytes_utf8_lf": 2566
+    },
+    {
+      "path": "examples/travel_support/demo.py",
+      "utf8_lf_sha256": "5bd9448f673d762862c97b518434535d797cb16ec608fae109eb3409c550832c",
+      "bytes_utf8_lf": 2668
+    },
+    {
+      "path": "examples/travel_support/fixtures.py",
+      "utf8_lf_sha256": "9c70b30355444adcff21ba21c66d19f5c4e54bfa8124e82679e3c44dc5f19a0b",
+      "bytes_utf8_lf": 1964
+    },
+    {
+      "path": "pyproject.toml",
+      "utf8_lf_sha256": "b0deeff9c0d0cf6b3dfc19a40c40b1041f9f0817d7c4a142dddcb7969b813c8b",
+      "bytes_utf8_lf": 882
+    },
+    {
+      "path": "src/maskroute/__init__.py",
+      "utf8_lf_sha256": "30863f8185fa2bfe88313909f1cf3d1c9b5c98d18b4a034e22258542bb73e6a4",
+      "bytes_utf8_lf": 1125
+    },
+    {
+      "path": "src/maskroute/audit.py",
+      "utf8_lf_sha256": "41f65240cdce75312f96bb2fed4bcb3385a04a087bc86444eab99f721ac267f6",
+      "bytes_utf8_lf": 483
+    },
+    {
+      "path": "src/maskroute/detection.py",
+      "utf8_lf_sha256": "26c32ce441507f73f343490c2c2073117380123de25b11266112386b0c38aa64",
+      "bytes_utf8_lf": 2247
+    },
+    {
+      "path": "src/maskroute/errors.py",
+      "utf8_lf_sha256": "09cf1db810a72715368c2f9ab0ab387cb17a50e8cd15f85f51d5d4e44d8e333e",
+      "bytes_utf8_lf": 1001
+    },
+    {
+      "path": "src/maskroute/policy.py",
+      "utf8_lf_sha256": "25748c4e50429b52ac366c8d2fa93d3bb6396c25110e34fd1838cd2b2dd0ff3c",
+      "bytes_utf8_lf": 1603
+    },
+    {
+      "path": "src/maskroute/protection.py",
+      "utf8_lf_sha256": "d14fd2ac235ba786b63ebc5a78b1dcd7d1748a36ba5a1064fc6d3b7340d2984c",
+      "bytes_utf8_lf": 1563
+    },
+    {
+      "path": "src/maskroute/py.typed",
+      "utf8_lf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes_utf8_lf": 0
+    },
+    {
+      "path": "src/maskroute/references.py",
+      "utf8_lf_sha256": "1c7bf0770137dda93739c9c29f564f73435742378431bc52847ce9bd1558b1c6",
+      "bytes_utf8_lf": 2639
+    },
+    {
+      "path": "src/maskroute/session.py",
+      "utf8_lf_sha256": "02876957769e140e5426adafbacf4233f78ed86a28c1650ba8de8c4ac341378c",
+      "bytes_utf8_lf": 16611
+    },
+    {
+      "path": "src/maskroute/tools.py",
+      "utf8_lf_sha256": "389853945c2005a8773ef23d29e13544ed2ebc93222df14816e72b1e3523fc7a",
+      "bytes_utf8_lf": 4371
+    },
+    {
+      "path": "tests/__init__.py",
+      "utf8_lf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes_utf8_lf": 0
+    },
+    {
+      "path": "tests/test_baseline.py",
+      "utf8_lf_sha256": "1ace0a4ea54a6f97fec7f34072572a90e547d041d14504a2ca79ad3bc133387c",
+      "bytes_utf8_lf": 3030
+    },
+    {
+      "path": "tests/test_demo.py",
+      "utf8_lf_sha256": "3d81a6a002b8b24ebed3531ba372a14271a5fd50eaa227c130b6414253292e13",
+      "bytes_utf8_lf": 1891
+    },
+    {
+      "path": "tests/test_detection.py",
+      "utf8_lf_sha256": "3b1e89364591bca3b4f64a35325cb6dd9437fca96215eb275df915f391d59979",
+      "bytes_utf8_lf": 1840
+    },
+    {
+      "path": "tests/test_independent_adversarial.py",
+      "utf8_lf_sha256": "306b5f160c9653985850dd9f1cdf0aea0822958dd7736a8fc97147d9b11df716",
+      "bytes_utf8_lf": 19835
+    },
+    {
+      "path": "tests/test_outputs.py",
+      "utf8_lf_sha256": "db31c1524af3410893a9c12ee8ce525135bace9414deedba3633e297515d028a",
+      "bytes_utf8_lf": 8697
+    },
+    {
+      "path": "tests/test_project_baseline.py",
+      "utf8_lf_sha256": "c9f5756994b253ff3da3ade422cac558cee941768ce63002bf5e5dc76f82ad63",
+      "bytes_utf8_lf": 3276
+    },
+    {
+      "path": "tests/test_project_reuse.py",
+      "utf8_lf_sha256": "215fb124083082e1263e34442c8ef0a345e649208cb5069d76cd804880beffcc",
+      "bytes_utf8_lf": 3327
+    },
+    {
+      "path": "tests/test_references.py",
+      "utf8_lf_sha256": "8f617f927e6add6335c0f4c52676871b725540a50cc894662ea219047658e5a1",
+      "bytes_utf8_lf": 4152
+    },
+    {
+      "path": "tests/test_review_regressions.py",
+      "utf8_lf_sha256": "45cf1a2aaf442fb8b33da3bd9f75a70226ff300f049a0d48283746075a2b7e09",
+      "bytes_utf8_lf": 5370
+    },
+    {
+      "path": "tests/test_tools.py",
+      "utf8_lf_sha256": "4b9769b45f914f2342da04443de34873f8aaf986073fa6c600df8308c7a88c26",
+      "bytes_utf8_lf": 6507
+    }
+  ]
+}

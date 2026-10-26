@@ -1,0 +1,29 @@
+name: checks
+on: [push, pull_request]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python: ['3.11', '3.14']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install -e ".[dev,comparison]"
+      - run: python -m pytest -q
+      - run: python -m ruff check .
+      - run: python -m ruff format --check .
+      - run: python -m mypy
+      - run: python -m examples.travel_support.demo
+      - run: python -m examples.project_management.demo
+      - run: python -m benchmarks.run --iterations 20 --warmup 2 --oss --output-dir build/ci-benchmark
+      - run: python -m benchmarks.reuse --iterations 20 --warmup 2 --output-dir build/ci-reuse
+      - run: python -m pip wheel . --no-deps --wheel-dir dist

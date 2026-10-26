@@ -1,0 +1,1135 @@
+{
+  "environment": {
+    "date_samara": "2026-10-26",
+    "python": "3.11.14 (main, Feb 12 2026, 00:37:49) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "machine": "AMD Ryzen 7 2700; 8 cores/16 logical; 31.93 GiB RAM",
+    "packages": {
+      "maskroute": "0.1.0",
+      "piighost": "2.1.1"
+    },
+    "iterations": 2000,
+    "warmup": 100,
+    "gc_enabled": true
+  },
+  "comparisons": {
+    "unprotected": {
+      "legitimate_task_success": 4,
+      "legitimate_tasks": 4,
+      "false_denials": 0,
+      "forbidden_sink_disclosures": 26,
+      "reference_roundtrip_correctness": 2,
+      "reference_roundtrip_attempts": 2,
+      "cross_scope_rejections": 0,
+      "forbidden_paths_rejected": 12,
+      "forbidden_paths": 15,
+      "trials": [
+        {
+          "scenario": "booking_carry",
+          "expected_valid": true,
+          "succeeded": true,
+          "denied": false,
+          "disclosures": 3,
+          "internal_calls": 1,
+          "search_calls": 1,
+          "roundtrip_correct": true
+        },
+        {
+          "scenario": "booking_checked",
+          "expected_valid": true,
+          "succeeded": true,
+          "denied": false,
+          "disclosures": 3,
+          "internal_calls": 1,
+          "search_calls": 1,
+          "roundtrip_correct": true
+        },
+        {
+          "scenario": "public_carry",
+          "expected_valid": true,
+          "succeeded": true,
+          "denied": false,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 1,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "public_checked",
+          "expected_valid": true,
+          "succeeded": true,
+          "denied": false,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 1,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "unissued",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": false,
+          "disclosures": 2,
+          "internal_calls": 1,
+          "search_calls": 0,
+          "roundtrip_correct": true
+        },
+        {
+          "scenario": "modified",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 1,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "wrong_kind",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": false,
+          "disclosures": 3,
+          "internal_calls": 1,
+          "search_calls": 0,
+          "roundtrip_correct": true
+        },
+        {
+          "scenario": "cross_scope",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": false,
+          "disclosures": 3,
+          "internal_calls": 1,
+          "search_calls": 0,
+          "roundtrip_correct": true
+        },
+        {
+          "scenario": "wrong_owner",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 1,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "closed",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 1,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "unknown_tool",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 1,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "wrong_field",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 1,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "extra",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 1,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "nested",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 1,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "url",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 1,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "query",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 1,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "topic",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 1,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "unknown_output",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 1,
+          "internal_calls": 1,
+          "search_calls": 0,
+          "roundtrip_correct": true
+        },
+        {
+          "scenario": "unapproved_airline",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 1,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        }
+      ]
+    },
+    "blanket_redaction": {
+      "legitimate_task_success": 2,
+      "legitimate_tasks": 4,
+      "false_denials": 2,
+      "forbidden_sink_disclosures": 0,
+      "reference_roundtrip_correctness": 0,
+      "reference_roundtrip_attempts": 2,
+      "cross_scope_rejections": 1,
+      "forbidden_paths_rejected": 15,
+      "forbidden_paths": 15,
+      "trials": [
+        {
+          "scenario": "booking_carry",
+          "expected_valid": true,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "booking_checked",
+          "expected_valid": true,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "public_carry",
+          "expected_valid": true,
+          "succeeded": true,
+          "denied": false,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 1,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "public_checked",
+          "expected_valid": true,
+          "succeeded": true,
+          "denied": false,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 1,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "unissued",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "modified",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "wrong_kind",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "cross_scope",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "wrong_owner",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "closed",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "unknown_tool",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "wrong_field",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "extra",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "nested",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "url",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "query",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "topic",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "unknown_output",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "unapproved_airline",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        }
+      ]
+    },
+    "handwritten": {
+      "legitimate_task_success": 4,
+      "legitimate_tasks": 4,
+      "false_denials": 0,
+      "forbidden_sink_disclosures": 0,
+      "reference_roundtrip_correctness": 2,
+      "reference_roundtrip_attempts": 2,
+      "cross_scope_rejections": 1,
+      "forbidden_paths_rejected": 15,
+      "forbidden_paths": 15,
+      "trials": [
+        {
+          "scenario": "booking_carry",
+          "expected_valid": true,
+          "succeeded": true,
+          "denied": false,
+          "disclosures": 0,
+          "internal_calls": 1,
+          "search_calls": 1,
+          "roundtrip_correct": true
+        },
+        {
+          "scenario": "booking_checked",
+          "expected_valid": true,
+          "succeeded": true,
+          "denied": false,
+          "disclosures": 0,
+          "internal_calls": 1,
+          "search_calls": 1,
+          "roundtrip_correct": true
+        },
+        {
+          "scenario": "public_carry",
+          "expected_valid": true,
+          "succeeded": true,
+          "denied": false,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 1,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "public_checked",
+          "expected_valid": true,
+          "succeeded": true,
+          "denied": false,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 1,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "unissued",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "modified",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "wrong_kind",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "cross_scope",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "wrong_owner",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "closed",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "unknown_tool",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "wrong_field",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "extra",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "nested",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "url",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "query",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "topic",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "unknown_output",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 1,
+          "search_calls": 0,
+          "roundtrip_correct": true
+        },
+        {
+          "scenario": "unapproved_airline",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        }
+      ]
+    },
+    "maskroute": {
+      "legitimate_task_success": 4,
+      "legitimate_tasks": 4,
+      "false_denials": 0,
+      "forbidden_sink_disclosures": 0,
+      "reference_roundtrip_correctness": 2,
+      "reference_roundtrip_attempts": 2,
+      "cross_scope_rejections": 1,
+      "forbidden_paths_rejected": 15,
+      "forbidden_paths": 15,
+      "trials": [
+        {
+          "scenario": "booking_carry",
+          "expected_valid": true,
+          "succeeded": true,
+          "denied": false,
+          "disclosures": 0,
+          "internal_calls": 1,
+          "search_calls": 1,
+          "roundtrip_correct": true
+        },
+        {
+          "scenario": "booking_checked",
+          "expected_valid": true,
+          "succeeded": true,
+          "denied": false,
+          "disclosures": 0,
+          "internal_calls": 1,
+          "search_calls": 1,
+          "roundtrip_correct": true
+        },
+        {
+          "scenario": "public_carry",
+          "expected_valid": true,
+          "succeeded": true,
+          "denied": false,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 1,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "public_checked",
+          "expected_valid": true,
+          "succeeded": true,
+          "denied": false,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 1,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "unissued",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "modified",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "wrong_kind",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "cross_scope",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "wrong_owner",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "closed",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "unknown_tool",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "wrong_field",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "extra",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "nested",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "url",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "query",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "topic",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "unknown_output",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 1,
+          "search_calls": 0,
+          "roundtrip_correct": true
+        },
+        {
+          "scenario": "unapproved_airline",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        }
+      ]
+    },
+    "piighost_with_host_checks": {
+      "legitimate_task_success": 4,
+      "legitimate_tasks": 4,
+      "false_denials": 0,
+      "forbidden_sink_disclosures": 0,
+      "reference_roundtrip_correctness": 2,
+      "reference_roundtrip_attempts": 2,
+      "cross_scope_rejections": 1,
+      "forbidden_paths_rejected": 15,
+      "forbidden_paths": 15,
+      "trials": [
+        {
+          "scenario": "booking_carry",
+          "expected_valid": true,
+          "succeeded": true,
+          "denied": false,
+          "disclosures": 0,
+          "internal_calls": 1,
+          "search_calls": 1,
+          "roundtrip_correct": true
+        },
+        {
+          "scenario": "booking_checked",
+          "expected_valid": true,
+          "succeeded": true,
+          "denied": false,
+          "disclosures": 0,
+          "internal_calls": 1,
+          "search_calls": 1,
+          "roundtrip_correct": true
+        },
+        {
+          "scenario": "public_carry",
+          "expected_valid": true,
+          "succeeded": true,
+          "denied": false,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 1,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "public_checked",
+          "expected_valid": true,
+          "succeeded": true,
+          "denied": false,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 1,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "unissued",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "modified",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "wrong_kind",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "cross_scope",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "wrong_owner",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "closed",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "unknown_tool",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "wrong_field",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "extra",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "nested",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "url",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "query",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "topic",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        },
+        {
+          "scenario": "unknown_output",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 1,
+          "search_calls": 0,
+          "roundtrip_correct": true
+        },
+        {
+          "scenario": "unapproved_airline",
+          "expected_valid": false,
+          "succeeded": false,
+          "denied": true,
+          "disclosures": 0,
+          "internal_calls": 0,
+          "search_calls": 0,
+          "roundtrip_correct": false
+        }
+      ]
+    }
+  },
+  "workflow_latency": {
+    "unprotected": {
+      "samples": 2000,
+      "p50_us": 20.9,
+      "p95_us": 23.9
+    },
+    "blanket_redaction": {
+      "samples": 2000,
+      "p50_us": 5.4,
+      "p95_us": 5.6
+    },
+    "handwritten": {
+      "samples": 2000,
+      "p50_us": 38.8,
+      "p95_us": 50.0
+    },
+    "maskroute": {
+      "samples": 2000,
+      "p50_us": 150.1,
+      "p95_us": 262.8
+    },
+    "piighost_with_host_checks": {
+      "samples": 2000,
+      "p50_us": 6703.45,
+      "p95_us": 8078.7
+    }
+  },
+  "core_latency": {
+    "unmediated_noop_provider": {
+      "samples": 2000,
+      "p50_us": 0.2,
+      "p95_us": 0.3
+    },
+    "new_value_protection": {
+      "samples": 2000,
+      "p50_us": 6.4,
+      "p95_us": 10.2
+    },
+    "stable_value_protection": {
+      "samples": 2000,
+      "p50_us": 4.0,
+      "p95_us": 6.6
+    },
+    "mediated_model_send": {
+      "samples": 2000,
+      "p50_us": 4.9,
+      "p95_us": 6.3
+    },
+    "authorized_lookup_and_output_filter": {
+      "samples": 2000,
+      "p50_us": 35.2,
+      "p95_us": 53.4
+    },
+    "protected_result_send": {
+      "samples": 2000,
+      "p50_us": 14.7,
+      "p95_us": 35.4
+    },
+    "authorized_plain_text_render": {
+      "samples": 2000,
+      "p50_us": 11.4,
+      "p95_us": 32.7
+    }
+  },
+  "detection": {
+    "en": {
+      "messages": 7,
+      "tp": 3,
+      "fp": 1,
+      "fn": 2,
+      "precision": 0.75,
+      "recall": 0.6,
+      "f1": 0.6666666666666665
+    },
+    "ru": {
+      "messages": 7,
+      "tp": 3,
+      "fp": 1,
+      "fn": 2,
+      "precision": 0.75,
+      "recall": 0.6,
+      "f1": 0.6666666666666665
+    },
+    "all": {
+      "messages": 14,
+      "tp": 6,
+      "fp": 2,
+      "fn": 4,
+      "precision": 0.75,
+      "recall": 0.6,
+      "f1": 0.6666666666666665
+    }
+  },
+  "source_measurements": {
+    "nonblank_noncomment_physical_lines_including_docstrings": {
+      "sdk_core": 766,
+      "sdk_app_configuration": 80,
+      "handwritten_boundary": 105,
+      "shared_fixtures": 45,
+      "oss_additional_adapter": 58
+    },
+    "python_sources_sha256": "e4856a656a486e873e33e733f69277522e0de186a040f509792a6d73c2dfc6bb"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "issue_read": "allowed",
+  "public_research": "allowed",
+  "maintainer_notes_for_reviewer": "UNAUTHORIZED",
+  "model_requests": 3,
+  "research_requests": 1,
+  "forbidden_disclosures": 0,
+  "authorized_display": "produced (private text omitted)",
+  "multi_issue_shared_contact": "known METADATA_CONFLICT limitation; see reuse report"
+}
